@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "TTV Badge Manager",
+  "version": "0.1.0",
+  "description": "A twitch extension to allow you to disable or enable badges in chat.",
+  "author": "DuckXYZ",
+
+  "browser_action": {
+    "default_popup": "popup/twitch-default.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "css": ["glowingname.css"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+		"128": "icon128.png"
+  },
+  
+  "permissions": [
+    "storage"
+  ]
+}

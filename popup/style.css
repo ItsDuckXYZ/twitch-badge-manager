@@ -1,0 +1,69 @@
+body {
+  margin: 0px;
+  min-width: 400px;
+  min-height: 210px;
+  background-color: #0e0e10;
+  color: white;
+  
+}
+
+.sidenav {
+  text-align: center;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 25%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #1f1f23; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sidenav p, .sidenav a {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin: 0px;
+  text-decoration: none;
+  color: white;
+}
+
+.sidenav p:hover, .sidenav a:hover {
+  background-color: #26262c;
+}
+
+.toggles {
+  overflow-y: scroll;
+  padding-bottom: 40px;
+  max-height: 235px;
+  position: relative;
+  left: 25%;
+}
+.toggles .link {
+  cursor: pointer;
+}
+
+#saved {
+  text-align: center;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: none;
+  border: none;
+  background-color: #6441a5;
+  color: white;
+  left: 25%;
+  width: 75%;
+  height: 40px;
+}
+
+#save-changes {
+  padding: 0px;
+  position: fixed;
+  bottom: 0px;
+  border: none;
+  background-color: #6441a5;
+  color: white;
+  left: 25%;
+  width: 75%;
+  height: 40px;
+}
